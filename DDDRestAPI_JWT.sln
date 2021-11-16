@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{46A298F2-F97C-4949-8612-7389E0A5D865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6F6EB928-3278-4F75-A5E9-461382CD509E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{17C110FF-7C39-4F4D-8C16-E1242CB07E7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{E6EDC3F2-E5BB-4D41-A16F-774C4A941BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDRestAPI_JWT.Domain", "DDDRestAPI_JWT.Domain\DDDRestAPI_JWT.Domain.csproj", "{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDRestAPI_JWT.Repository", "DDDRestAPI_JWT.Repository\DDDRestAPI_JWT.Repository.csproj", "{3063CDC7-F8BC-4FB0-8221-373848D40225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDRestAPI_JWT.Application", "DDDRestAPI_JWT.Application\DDDRestAPI_JWT.Application.csproj", "{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDRestAPI_JWT.Service", "DDDRestAPI_JWT.Service\DDDRestAPI_JWT.Service.csproj", "{2944E1C2-75AC-46E2-9785-09A8842A8ECB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3063CDC7-F8BC-4FB0-8221-373848D40225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3063CDC7-F8BC-4FB0-8221-373848D40225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3063CDC7-F8BC-4FB0-8221-373848D40225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3063CDC7-F8BC-4FB0-8221-373848D40225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2944E1C2-75AC-46E2-9785-09A8842A8ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2944E1C2-75AC-46E2-9785-09A8842A8ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2944E1C2-75AC-46E2-9785-09A8842A8ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2944E1C2-75AC-46E2-9785-09A8842A8ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76CAECB5-4C6D-42D7-AF0D-21BCD5A32B3D} = {17C110FF-7C39-4F4D-8C16-E1242CB07E7F}
+		{3063CDC7-F8BC-4FB0-8221-373848D40225} = {E6EDC3F2-E5BB-4D41-A16F-774C4A941BA2}
+		{ADB11315-08F9-47B4-9AB3-BCBBF5ADCDBB} = {46A298F2-F97C-4949-8612-7389E0A5D865}
+		{2944E1C2-75AC-46E2-9785-09A8842A8ECB} = {6F6EB928-3278-4F75-A5E9-461382CD509E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C19DF36F-58B9-4BAB-A5BA-54597BABFEDC}
+	EndGlobalSection
+EndGlobal

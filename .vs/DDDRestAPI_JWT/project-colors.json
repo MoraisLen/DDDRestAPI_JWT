@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "76caecb5-4c6d-42d7-af0d-21bcd5a32b3d": {
+      "ProjectGuid": "76caecb5-4c6d-42d7-af0d-21bcd5a32b3d",
+      "DisplayName": "DDDRestAPI_JWT.Domain",
+      "ColorIndex": 0
+    },
+    "3063cdc7-f8bc-4fb0-8221-373848d40225": {
+      "ProjectGuid": "3063cdc7-f8bc-4fb0-8221-373848d40225",
+      "DisplayName": "DDDRestAPI_JWT.Repository",
+      "ColorIndex": 1
+    },
+    "adb11315-08f9-47b4-9ab3-bcbbf5adcdbb": {
+      "ProjectGuid": "adb11315-08f9-47b4-9ab3-bcbbf5adcdbb",
+      "DisplayName": "DDDRestAPI_JWT.Application",
+      "ColorIndex": 2
+    },
+    "2944e1c2-75ac-46e2-9785-09a8842a8ecb": {
+      "ProjectGuid": "2944e1c2-75ac-46e2-9785-09a8842a8ecb",
+      "DisplayName": "DDDRestAPI_JWT.Service",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
