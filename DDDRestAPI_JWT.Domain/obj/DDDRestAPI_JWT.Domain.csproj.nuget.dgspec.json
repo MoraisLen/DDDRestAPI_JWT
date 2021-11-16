@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {}
+    "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
+    "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
         "projectName": "DDDRestAPI_JWT.Domain",
-        "projectPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
-        "packagesPath": "C:\\Users\\Suporte Técnico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
+        "packagesPath": "C:\\Users\\Morais\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Suporte Técnico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Morais\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }

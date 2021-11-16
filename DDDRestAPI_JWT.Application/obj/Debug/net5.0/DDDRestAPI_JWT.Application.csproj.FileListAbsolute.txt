@@ -1,0 +1,17 @@
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Application.deps.json
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Application.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\ref\DDDRestAPI_JWT.Application.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Application.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Domain.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\bin\Debug\net5.0\DDDRestAPI_JWT.Domain.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.csproj.AssemblyReference.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.AssemblyInfoInputs.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.AssemblyInfo.cs
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.csproj.CoreCompileInputs.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.csproj.CopyComplete
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\ref\DDDRestAPI_JWT.Application.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Application\obj\Debug\net5.0\DDDRestAPI_JWT.Application.pdb

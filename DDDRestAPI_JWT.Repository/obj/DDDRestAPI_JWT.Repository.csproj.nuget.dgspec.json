@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj": {}
+    "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
+    "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
         "projectName": "DDDRestAPI_JWT.Domain",
-        "projectPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
-        "packagesPath": "C:\\Users\\Suporte Técnico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj",
+        "packagesPath": "C:\\Users\\Morais\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Suporte Técnico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Morais\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj": {
+    "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj",
         "projectName": "DDDRestAPI_JWT.Repository",
-        "projectPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj",
-        "packagesPath": "C:\\Users\\Suporte Técnico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\DDDRestAPI_JWT.Repository.csproj",
+        "packagesPath": "C:\\Users\\Morais\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Suporte Técnico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Morais\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
-                "projectPath": "C:\\Users\\Suporte Técnico\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj"
+              "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj": {
+                "projectPath": "C:\\Users\\Morais\\Desktop\\DDDRestAPI_JWT\\DDDRestAPI_JWT.Domain\\DDDRestAPI_JWT.Domain.csproj"
               }
             }
           }
@@ -128,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }

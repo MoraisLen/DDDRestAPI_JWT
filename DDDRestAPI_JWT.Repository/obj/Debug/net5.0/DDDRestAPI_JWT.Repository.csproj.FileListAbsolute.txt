@@ -16,3 +16,21 @@ C:\Users\Suporte Técnico\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\D
 C:\Users\Suporte Técnico\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\ref\DDDRestAPI_JWT.Repository.dll
 C:\Users\Suporte Técnico\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.pdb
 C:\Users\Suporte Técnico\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.genruntimeconfig.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.deps.json
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.runtimeconfig.json
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.runtimeconfig.dev.json
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\ref\DDDRestAPI_JWT.Repository.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Repository.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Domain.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\bin\Debug\net5.0\DDDRestAPI_JWT.Domain.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.csproj.AssemblyReference.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.AssemblyInfoInputs.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.AssemblyInfo.cs
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.csproj.CopyComplete
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\ref\DDDRestAPI_JWT.Repository.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.pdb
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.genruntimeconfig.cache
