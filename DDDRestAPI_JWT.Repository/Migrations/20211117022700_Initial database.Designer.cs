@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DDDRestAPI_JWT.Repository.Migrations
 {
     [DbContext(typeof(ContextDatabase))]
-    [Migration("20211116144013_initial migration")]
-    partial class initialmigration
+    [Migration("20211117022700_Initial database")]
+    partial class Initialdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,6 +25,9 @@ namespace DDDRestAPI_JWT.Repository.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NameId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Role")
                         .HasColumnType("text");
 
                     b.Property<string>("Secret")

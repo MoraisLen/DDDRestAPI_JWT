@@ -15,5 +15,7 @@ namespace DDDRestAPI_JWT.Application.IApp
         IEnumerable<ClientAPI> GetAll();
 
         ClientAPI Get(int Id);
+
+        ClientAPI GetAuth(DTOClientAPI _obj);
     }
 }

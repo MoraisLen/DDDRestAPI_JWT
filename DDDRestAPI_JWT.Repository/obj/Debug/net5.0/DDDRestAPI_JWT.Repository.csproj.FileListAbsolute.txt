@@ -29,7 +29,6 @@ C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.AssemblyInfoInputs.cache
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.AssemblyInfo.cs
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.csproj.CoreCompileInputs.cache
-C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.csproj.CopyComplete
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.dll
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\ref\DDDRestAPI_JWT.Repository.dll
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Repository\obj\Debug\net5.0\DDDRestAPI_JWT.Repository.pdb

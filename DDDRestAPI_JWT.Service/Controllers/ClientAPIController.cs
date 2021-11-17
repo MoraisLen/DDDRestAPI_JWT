@@ -1,7 +1,13 @@
 ﻿using DDDRestAPI_JWT.Application.IApp;
 using DDDRestAPI_JWT.Domain.DTOs;
+using DDDRestAPI_JWT.Domain.Enties;
+using DDDRestAPI_JWT.Repository.JWT;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.Linq;
+using System.Security.Claims;
 
 namespace DDDRestAPI_JWT.Service.Controllers
 {
@@ -10,25 +16,48 @@ namespace DDDRestAPI_JWT.Service.Controllers
     public class ClientAPIController : Controller
     {
         private readonly IAppClientAPI IClientApp;
+        private readonly IConfiguration configuration;
 
-        public ClientAPIController(IAppClientAPI _IClientApp)
+        public ClientAPIController(IConfiguration _configuration, IAppClientAPI _IClientApp)
         {
             this.IClientApp = _IClientApp;
+            this.configuration = _configuration;
         }
 
         [HttpPost]
         [Route("tokenGeneration")]
+        [AllowAnonymous]
         public ActionResult TokenGeneration(DTOClientAPI _dto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState.ToString());
+
             try
             {
-                this.IClientApp.Add(_dto);
-                return Ok();
+                ClientAPI _clientAPI = this.IClientApp.GetAuth(_dto);
+
+                if (_clientAPI == null)
+                    return NotFound();
+
+                string key = this.configuration.GetSection("KeyJWT").ToString();
+                var token = TokenService.getToken(_clientAPI, key);
+
+                return Ok(new
+                {
+                    User = _dto,
+                    Token = token
+                });
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
+    
+        [HttpGet]
+        [Route("role")]
+        [Authorize (Roles = "admin")]
+        public ActionResult GetRole () => Ok(User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value);
+
     }
 }

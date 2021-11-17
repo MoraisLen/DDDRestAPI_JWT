@@ -15,7 +15,7 @@ namespace DDDRestAPI_JWT.Repository.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(connectionString: "Server=localhost;DataBase=db_restapijwt;Uid=root;Pwd=");
+            optionsBuilder.UseMySQL(connectionString: "Server=localhost;DataBase=db_restjwt;Uid=root;Pwd=");
         }
     }
 }

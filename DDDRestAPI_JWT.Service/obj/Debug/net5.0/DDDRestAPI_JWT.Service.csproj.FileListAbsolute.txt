@@ -49,3 +49,10 @@ C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\obj\Debug\net5.0\D
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\obj\Debug\net5.0\ref\DDDRestAPI_JWT.Service.dll
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\obj\Debug\net5.0\DDDRestAPI_JWT.Service.pdb
 C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\obj\Debug\net5.0\DDDRestAPI_JWT.Service.genruntimeconfig.cache
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Morais\Desktop\DDDRestAPI_JWT\DDDRestAPI_JWT.Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

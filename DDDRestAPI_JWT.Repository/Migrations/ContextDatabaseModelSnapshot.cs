@@ -25,6 +25,9 @@ namespace DDDRestAPI_JWT.Repository.Migrations
                     b.Property<string>("NameId")
                         .HasColumnType("text");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("text");
+
                     b.Property<string>("Secret")
                         .HasColumnType("text");
 

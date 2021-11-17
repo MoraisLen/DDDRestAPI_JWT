@@ -8,16 +8,16 @@ namespace DDDRestAPI_JWT.Repository.Repository
 {
     public class RepositoryBase<TEntie> : IRepositoryBase<TEntie> where TEntie : class
     {
-        private readonly DbContextOptions<ContextDatabase> _contextOptions;
+        private readonly DbContextOptions<ContextDatabase> ContextOptions;
 
         public RepositoryBase()
         {
-            _contextOptions = new DbContextOptions<ContextDatabase>();
+            ContextOptions = new DbContextOptions<ContextDatabase>();
         }
 
         public void Add(TEntie entie)
         {
-            using (var context = new ContextDatabase(_contextOptions))
+            using (var context = new ContextDatabase(ContextOptions))
             {
                 context.Set<TEntie>().Add(entie);
                 context.SaveChanges();
@@ -26,7 +26,7 @@ namespace DDDRestAPI_JWT.Repository.Repository
 
         public TEntie Get(int Id)
         {
-            using (var context = new ContextDatabase(_contextOptions))
+            using (var context = new ContextDatabase(ContextOptions))
             {
                 return context.Set<TEntie>().Find(Id);
             }
@@ -34,7 +34,7 @@ namespace DDDRestAPI_JWT.Repository.Repository
 
         public IEnumerable<TEntie> GetAll()
         {
-            using (var context = new ContextDatabase(_contextOptions))
+            using (var context = new ContextDatabase(ContextOptions))
             {
                 return context.Set<TEntie>().ToList();
             }
@@ -42,7 +42,7 @@ namespace DDDRestAPI_JWT.Repository.Repository
 
         public void Remove(TEntie entie)
         {
-            using (var context = new ContextDatabase(_contextOptions))
+            using (var context = new ContextDatabase(ContextOptions))
             {
                 context.Set<TEntie>().Remove(entie);
                 context.SaveChanges();
@@ -51,7 +51,7 @@ namespace DDDRestAPI_JWT.Repository.Repository
 
         public void Update(TEntie entie)
         {
-            using (var context = new ContextDatabase(_contextOptions))
+            using (var context = new ContextDatabase(ContextOptions))
             {
                 context.Set<TEntie>().Update(entie);
                 context.SaveChanges();

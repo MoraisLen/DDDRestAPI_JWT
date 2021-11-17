@@ -3,7 +3,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace DDDRestAPI_JWT.Repository.Migrations
 {
-    public partial class initialmigration : Migration
+    public partial class Initialdatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,8 @@ namespace DDDRestAPI_JWT.Repository.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     NameId = table.Column<string>(type: "text", nullable: true),
-                    Secret = table.Column<string>(type: "text", nullable: true)
+                    Secret = table.Column<string>(type: "text", nullable: true),
+                    Role = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

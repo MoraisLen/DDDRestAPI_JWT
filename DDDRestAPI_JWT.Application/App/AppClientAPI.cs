@@ -1,16 +1,16 @@
 ﻿using DDDRestAPI_JWT.Application.IApp;
 using DDDRestAPI_JWT.Domain.DTOs;
 using DDDRestAPI_JWT.Domain.Enties;
-using DDDRestAPI_JWT.Repository.Repository;
+using DDDRestAPI_JWT.Domain.IRepository;
 using System.Collections.Generic;
 
 namespace DDDRestAPI_JWT.Application.App
 {
     public class AppClientAPI : IAppClientAPI
     {
-        private readonly RepositoryClientAPI RepositoryClientAPI;
+        private readonly IRepositoryClientAPI RepositoryClientAPI;
 
-        public AppClientAPI(RepositoryClientAPI _RepositoryClientAPI)
+        public AppClientAPI(IRepositoryClientAPI _RepositoryClientAPI)
         {
             this.RepositoryClientAPI = _RepositoryClientAPI;
         }
@@ -38,12 +38,17 @@ namespace DDDRestAPI_JWT.Application.App
 
         public ClientAPI Get(int Id)
         {
-            return RepositoryClientAPI.Get(Id);
+            return this.RepositoryClientAPI.Get(Id);
         }
 
         public IEnumerable<ClientAPI> GetAll()
         {
-            return RepositoryClientAPI.GetAll();
+            return this.RepositoryClientAPI.GetAll();
+        }
+
+        public ClientAPI GetAuth(DTOClientAPI _obj)
+        {
+            return this.RepositoryClientAPI.GetAuthClientAPI(_obj);
         }
     }
 }

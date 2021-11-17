@@ -1,9 +1,16 @@
+using DDDRestAPI_JWT.Application.App;
+using DDDRestAPI_JWT.Application.IApp;
+using DDDRestAPI_JWT.Domain.IRepository;
+using DDDRestAPI_JWT.Repository.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 namespace DDDRestAPI_JWT.Service
 {
@@ -19,6 +26,32 @@ namespace DDDRestAPI_JWT.Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+
+            var key = Encoding.ASCII.GetBytes(Configuration.GetSection("KeyJWT").ToString());
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
+            services.AddSingleton(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+            services.AddSingleton<IRepositoryClientAPI, RepositoryClientAPI>();
+            services.AddSingleton<IAppClientAPI, AppClientAPI>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -39,6 +72,13 @@ namespace DDDRestAPI_JWT.Service
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(x => x
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
