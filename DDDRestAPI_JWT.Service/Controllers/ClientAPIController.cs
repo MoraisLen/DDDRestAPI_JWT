@@ -53,11 +53,22 @@ namespace DDDRestAPI_JWT.Service.Controllers
                 return BadRequest(ex.Message);
             }
         }
-    
-        [HttpGet]
-        [Route("role")]
-        [Authorize (Roles = "admin")]
-        public ActionResult GetRole () => Ok(User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value);
 
+        [HttpGet]
+        [Route("GetInformation")]
+        [Authorize]
+        public ActionResult GetInformation()
+        {
+            return Ok(new
+            {
+                NameId = User.Identity.Name,
+                Role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value,
+            });
+        }
+
+        [HttpGet]
+        [Route("GetAuthAdmin")]
+        [Authorize(Roles = "admin")]
+        public ActionResult GetAuthAdmin() => Ok("Admin");
     }
 }
