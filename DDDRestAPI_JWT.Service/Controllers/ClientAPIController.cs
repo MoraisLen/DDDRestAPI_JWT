@@ -13,7 +13,7 @@ namespace DDDRestAPI_JWT.Service.Controllers
 {
     [ApiController]
     [Route("/api/v1/ClientAPI")]
-    public class ClientAPIController : Controller
+    public class ClientAPIController : ControllerBase
     {
         private readonly IAppClientAPI IClientApp;
         private readonly IConfiguration configuration;
@@ -29,9 +29,6 @@ namespace DDDRestAPI_JWT.Service.Controllers
         [AllowAnonymous]
         public ActionResult TokenGeneration(DTOClientAPI _dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState.ToString());
-
             try
             {
                 ClientAPI _clientAPI = this.IClientApp.GetAuth(_dto);
@@ -57,18 +54,15 @@ namespace DDDRestAPI_JWT.Service.Controllers
         [HttpGet]
         [Route("GetInformation")]
         [Authorize]
-        public ActionResult GetInformation()
+        public ActionResult GetInformation() => Ok(new
         {
-            return Ok(new
-            {
-                NameId = User.Identity.Name,
-                Role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value,
-            });
-        }
+            NameId = User.Identity.Name,
+            Role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value,
+        });
 
         [HttpGet]
         [Route("GetAuthAdmin")]
         [Authorize(Roles = "admin")]
-        public ActionResult GetAuthAdmin() => Ok("Admin");
+        public ActionResult GetAuthAdmin() => Ok($"Admin - Welcome {User.Identity.Name}");
     }
 }
