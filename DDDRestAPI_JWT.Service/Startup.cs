@@ -51,6 +51,8 @@ namespace DDDRestAPI_JWT.Service
             services.AddSingleton(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddSingleton<IRepositoryClientAPI, RepositoryClientAPI>();
             services.AddSingleton<IAppClientAPI, AppClientAPI>();
+            services.AddSingleton<IRepositoryUser, RepositoryUser>();
+            services.AddSingleton<IAppUser, AppUser>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

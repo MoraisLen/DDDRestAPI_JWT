@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DDDRestAPI_JWT.Domain.Enties
 {
-    [Table ("ClientAPI")]
+    [Table("ClientAPI")]
     public class ClientAPI : EntieBase
     {
         [Required]
@@ -11,7 +11,7 @@ namespace DDDRestAPI_JWT.Domain.Enties
         public string NameId { get; set; }
 
         [Required]
-        [MaxLength(10)]
+        [MaxLength(20)]
         public string Secret { get; set; }
 
         [Required]

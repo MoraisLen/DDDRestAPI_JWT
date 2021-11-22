@@ -6,6 +6,7 @@ namespace DDDRestAPI_JWT.Repository.Data
     internal class ContextDatabase : DbContext
     {
         public DbSet<ClientAPI> ClientAPIs { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public ContextDatabase()
         { }

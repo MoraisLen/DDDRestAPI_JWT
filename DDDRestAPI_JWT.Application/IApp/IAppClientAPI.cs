@@ -1,6 +1,7 @@
 ﻿using DDDRestAPI_JWT.Domain.DTOs;
 using DDDRestAPI_JWT.Domain.Enties;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DDDRestAPI_JWT.Application.IApp
 {
@@ -16,6 +17,6 @@ namespace DDDRestAPI_JWT.Application.IApp
 
         ClientAPI Get(int Id);
 
-        ClientAPI GetAuth(DTOClientAPI _obj);
+        Task<ClientAPI> GetAuth(DTOClientAPI _obj);
     }
 }

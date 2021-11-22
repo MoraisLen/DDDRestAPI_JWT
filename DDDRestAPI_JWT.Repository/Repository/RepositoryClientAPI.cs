@@ -4,6 +4,7 @@ using DDDRestAPI_JWT.Domain.IRepository;
 using DDDRestAPI_JWT.Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DDDRestAPI_JWT.Repository.Repository
 {
@@ -16,14 +17,14 @@ namespace DDDRestAPI_JWT.Repository.Repository
             ContextOptions = new DbContextOptions<ContextDatabase>();
         }
 
-        public ClientAPI GetAuthClientAPI(DTOClientAPI _dto)
+        public async Task<ClientAPI> GetAuthClientAPI(DTOClientAPI _dto)
         {
             using (var context = new ContextDatabase(ContextOptions))
             {
-                return context.ClientAPIs
+                return await context.ClientAPIs
                     .Where(x => x.NameId == _dto.NameId)
                     .Where(x => x.Secret == _dto.Secret)
-                    .FirstOrDefault();
+                    .FirstAsync();
             }
         }
     }

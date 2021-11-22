@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace DDDRestAPI_JWT.Service.Controllers
 {
@@ -25,13 +26,13 @@ namespace DDDRestAPI_JWT.Service.Controllers
         }
 
         [HttpPost]
-        [Route("tokenGeneration")]
+        [Route("TokenGeneration")]
         [AllowAnonymous]
-        public ActionResult TokenGeneration(DTOClientAPI _dto)
+        public async Task<ActionResult> TokenAuth([FromBody] DTOClientAPI _dto)
         {
             try
             {
-                ClientAPI _clientAPI = this.IClientApp.GetAuth(_dto);
+                ClientAPI _clientAPI = await this.IClientApp.GetAuth(_dto);
 
                 if (_clientAPI == null)
                     return NotFound();
@@ -52,17 +53,12 @@ namespace DDDRestAPI_JWT.Service.Controllers
         }
 
         [HttpGet]
-        [Route("GetInformation")]
+        [Route("InforAuth")]
         [Authorize]
-        public ActionResult GetInformation() => Ok(new
+        public ActionResult Information() => Ok(new
         {
             NameId = User.Identity.Name,
             Role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value,
         });
-
-        [HttpGet]
-        [Route("GetAuthAdmin")]
-        [Authorize(Roles = "admin")]
-        public ActionResult GetAuthAdmin() => Ok($"Admin - Welcome {User.Identity.Name}");
     }
 }

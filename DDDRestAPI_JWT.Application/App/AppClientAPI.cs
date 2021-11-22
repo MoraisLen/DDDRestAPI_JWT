@@ -3,6 +3,7 @@ using DDDRestAPI_JWT.Domain.DTOs;
 using DDDRestAPI_JWT.Domain.Enties;
 using DDDRestAPI_JWT.Domain.IRepository;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DDDRestAPI_JWT.Application.App
 {
@@ -46,9 +47,9 @@ namespace DDDRestAPI_JWT.Application.App
             return this.RepositoryClientAPI.GetAll();
         }
 
-        public ClientAPI GetAuth(DTOClientAPI _obj)
+        public async Task<ClientAPI> GetAuth(DTOClientAPI _obj)
         {
-            return this.RepositoryClientAPI.GetAuthClientAPI(_obj);
+            return await this.RepositoryClientAPI.GetAuthClientAPI(_obj);
         }
     }
 }

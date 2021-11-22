@@ -1,10 +1,11 @@
 ﻿using DDDRestAPI_JWT.Domain.DTOs;
 using DDDRestAPI_JWT.Domain.Enties;
+using System.Threading.Tasks;
 
 namespace DDDRestAPI_JWT.Domain.IRepository
 {
     public interface IRepositoryClientAPI : IRepositoryBase<ClientAPI>
     {
-        ClientAPI GetAuthClientAPI(DTOClientAPI _dto);
+        Task<ClientAPI> GetAuthClientAPI(DTOClientAPI _dto);
     }
 }
