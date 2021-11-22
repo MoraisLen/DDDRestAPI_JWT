@@ -50,11 +50,11 @@ namespace DDDRestAPI_JWT.Application.App
 
         public void ImportUser(string data)
         {
-            string[] array = data.Split('\n');
+            var array = data.Split('\n');
 
-            foreach (string line in array)
+            foreach (var line in array)
             {
-                string[] infor = line.Split(':');
+                var infor = line.Split(':');
 
                 if (infor.Length >= 4)
                 {
