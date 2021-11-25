@@ -13,6 +13,10 @@
     <ProjectReference Include="..\DDDRestAPI_JWT.Domain\DDDRestAPI_JWT.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Path\" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

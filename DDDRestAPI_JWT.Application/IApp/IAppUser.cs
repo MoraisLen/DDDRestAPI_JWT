@@ -6,7 +6,7 @@ namespace DDDRestAPI_JWT.Application.IApp
 {
     public interface IAppUser
     {
-        void Add(DTOUser _obj);
+        void Add(List<DTOUser> lstDTOUsers);
 
         void Update(User _obj);
 
@@ -16,6 +16,8 @@ namespace DDDRestAPI_JWT.Application.IApp
 
         User Get(int Id);
 
-        void ImportUser(string data);
+        void ImportUser(string path);
+
+        string ExportUser();
     }
 }
