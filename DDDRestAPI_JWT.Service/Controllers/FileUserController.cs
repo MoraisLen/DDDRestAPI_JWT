@@ -1,4 +1,5 @@
 ﻿using DDDRestAPI_JWT.Application.IApp;
+using DDDRestAPI_JWT.Domain.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -16,17 +17,17 @@ namespace DDDRestAPI_JWT.Service.Controllers
             this.AppUser = _AppUser;
         }
 
-        [HttpGet]
-        [Route("ImportFileUser/{path}")]
+        [HttpPost]
+        [Route("ImportFileUser")]
         [Authorize]
-        public ActionResult ImportFileUser(string path)
+        public ActionResult ImportFileUser([FromBody] DTOFileUser file)
         {
-            if (path == null)
+            if (file.Path == null)
                 return BadRequest();
 
             try
             {
-                this.AppUser.ImportUser(path);
+                this.AppUser.ImportUser(file.Path);
             }
             catch (Exception ex)
             {
