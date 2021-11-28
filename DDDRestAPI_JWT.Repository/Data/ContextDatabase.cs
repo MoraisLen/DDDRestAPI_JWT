@@ -16,7 +16,8 @@ namespace DDDRestAPI_JWT.Repository.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(connectionString: "Server=localhost;DataBase=db_restjwt;Uid=root;Pwd=");
+            optionsBuilder.UseSqlServer(connectionString: "Password=camocim360;Persist Security Info=True;User ID=apijwt;Initial Catalog=db_apijwt;Data Source=DESKTOP-8S4R9T9");
+            //optionsBuilder.UseMySQL(connectionString: "Server=localhost;DataBase=db_restjwt;Uid=root;Pwd=");
         }
     }
 }

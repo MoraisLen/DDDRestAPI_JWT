@@ -78,7 +78,7 @@ namespace DDDRestAPI_JWT.Application.App
 
             foreach (var line in array)
             {
-                var infor = line.Split(':');
+                var infor = line.Split(';');
 
                 if (infor.Length >= 4)
                 {
