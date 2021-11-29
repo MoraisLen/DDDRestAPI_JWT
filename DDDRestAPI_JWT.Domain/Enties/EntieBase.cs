@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DDDRestAPI_JWT.Domain.Enties
 {
@@ -6,6 +7,7 @@ namespace DDDRestAPI_JWT.Domain.Enties
     {
         [Required]
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
     }
 }

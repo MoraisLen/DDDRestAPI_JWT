@@ -21,7 +21,8 @@ namespace DDDRestAPI_JWT.Application.App
             ClientAPI newClient = new ClientAPI
             {
                 NameId = _obj.NameId,
-                Secret = _obj.Secret
+                Secret = _obj.Secret,
+                Role = _obj.Role
             };
 
             this.RepositoryClientAPI.Add(newClient);

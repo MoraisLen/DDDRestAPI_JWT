@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -60,5 +62,111 @@ namespace DDDRestAPI_JWT.Service.Controllers
             NameId = User.Identity.Name,
             Role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault()?.Value,
         });
+
+
+        [HttpPost]
+        [Route("Add")]
+        [Authorize(Roles = "admin")]
+        public ActionResult Add([FromBody] DTOClientAPI newClientAPI)
+        {
+            if (newClientAPI == null)
+                return BadRequest();
+
+            try
+            {
+                this.IClientApp.Add(newClientAPI);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok(newClientAPI);
+        }
+
+        [HttpGet]
+        [Route("Get/{Id}")]
+        [Authorize(Roles = "admin")]
+        public ActionResult Get([FromRoute] int Id)
+        { 
+            try
+            {
+                ClientAPI clientApi = this.IClientApp.Get(Id);
+
+                if (clientApi == null)
+                    return NotFound();
+                else
+                    return Ok(clientApi);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("Get")]
+        [Authorize(Roles = "admin")]
+        public ActionResult GetAll()
+        {
+            try
+            {
+                IEnumerable<ClientAPI> lstClientApi = this.IClientApp.GetAll();
+
+                if (lstClientApi == null)
+                    return NotFound();
+                else
+                    return Ok(lstClientApi);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        [Route("Update/{Id}")]
+        [Authorize(Roles = "admin")]
+        public ActionResult Update([FromRoute] int Id, [FromBody] DTOClientAPI DTOClientAPI)
+        {
+            ClientAPI clientApi = this.IClientApp.Get(Id);
+
+            if (clientApi == null)
+                return NotFound();
+
+            try
+            {
+                clientApi.NameId = DTOClientAPI.NameId;
+                clientApi.Secret = DTOClientAPI.Secret;
+                clientApi.Role = DTOClientAPI.Role;
+
+                this.IClientApp.Update(clientApi);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok(clientApi);
+        }
+
+        [HttpDelete]
+        [Route("Delete/{Id}")]
+        [Authorize(Roles = "admin")]
+        public ActionResult Delete([FromRoute] int Id)
+        {
+            ClientAPI clientApi = this.IClientApp.Get(Id);
+
+            try
+            {
+                this.IClientApp.Remove(clientApi);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok();
+        }
     }
 }

@@ -9,7 +9,10 @@ namespace DDDRestAPI_JWT.Domain.DTOs
         public string NameId { get; set; }
 
         [Required]
-        [MaxLength(20, ErrorMessage = "Secret must be a maximum of 20 characters.")]
+        [StringLength(20, ErrorMessage = "Secret must be a maximum of 20 characters.")]
         public string Secret { get; set; }
+
+        [StringLength(10)]
+        public string? Role { get; set; }
     }
 }
